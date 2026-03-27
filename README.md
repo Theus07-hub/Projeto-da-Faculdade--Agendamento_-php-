@@ -15,11 +15,7 @@ Incluir atributos básicos em cada classe
 Mostrar os relacionamentos entre as classes (1:N)
 
 Além disso:
-Explique de forma simples o que o diagrama representa
-Explique o significado das "tags" utilizadas, especialmente:
-  ```mermaid
- ( classDiagram )
-
+Explique de forma simples o que o diagrama representa.
 
 # Sistema de Agendamento de Barbearia
 
