@@ -8,13 +8,13 @@ teste
 
 
 
-\## 📌 Descrição
+\## Descrição
 
 Projeto desenvolvido para gerenciar agendamentos de clientes em uma barbearia.
 
 
 
-\## 🧠 UML
+\## UML
 
 
 
