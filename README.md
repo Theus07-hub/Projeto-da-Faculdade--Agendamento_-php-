@@ -35,9 +35,29 @@ Projeto desenvolvido para gerenciar agendamentos de clientes em uma barbearia.
 
 classDiagram
 
-Cliente --> Agendamento
+class Cliente {
++nome: string
++idade: int
+}
 
-Barbeiro --> Agendamento
+class Agendamento {
++ dataHora: datetime
++ status: string
+}
 
-Servico --> Agendamento
+class Servico {
++valor: float
++nome: string
++duracao: int
+}
+
+class Barbeiro {
++ nome: string
+}
+
+
+Cliente "1"--> "N"  Agendamento
+Barbeiro "1"-->"N" Agendamento
+Agendamento "1" --> "1" Servico
+
 
