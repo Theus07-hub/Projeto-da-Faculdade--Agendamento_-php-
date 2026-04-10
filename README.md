@@ -1,29 +1,24 @@
 # Projeto-da-Faculdade--Agendamento\_-php-
 
-O Arquivo vai ser criado para aprendizado Institucional e Profissional, ele ira direcionar-se a um sistema de agendamento de barbearia.
+O Arquivo vai ser criado para aprendizado Institucional e Profissional, ele ira direcionar-se a um sistema de agendamento de passeador de animais.
 
 teste
 
 prompt utilizado com CHATGPT para o auxilio dessa ativiadade: 
-(
-Crie um diagrama UML de classes para um sistema de agendamento de barbearia.
 
-Requisitos:
-O diagrama deve usar Mermaid (classDiagram)
-Deve conter as classes: Cliente, Barbeiro, Servico e Agendamento
-Incluir atributos básicos em cada classe
-Mostrar os relacionamentos entre as classes (1:N)
+Quero ajuda para criar um UML de um sistema de agendamento
+Depois quero melhorar ela com sua opinião
+Depois quero colocar o README no GitHub usando CMD (Aprendizado para não esquecer)
+Após quero que me ensine PHP do zero, com passo a passo detlhado se pular etapas.
 
-Além disso:
-Explique de forma simples o que o diagrama representa.
+# Sistema de Agendamento de passeador com animais.
 
-# Sistema de Agendamento de Barbearia
 
 
 
 \## Descrição
 
-Projeto desenvolvido para gerenciar agendamentos de clientes em uma barbearia.
+Projeto desenvolvido para gerenciar agendamentos de clientes para passear com seus animais(pet).
 
 
 
@@ -35,29 +30,37 @@ Projeto desenvolvido para gerenciar agendamentos de clientes em uma barbearia.
 
 classDiagram
 
-class Cliente {
+class Tutor {
++nome: string
++telefone: int
+}
+
+class pet {
 +nome: string
 +idade: int
++porte: string
+}
+
+class Passeador {
++nome: string
++experiencia: string
 }
 
 class Agendamento {
-+ dataHora: datetime
-+ status: string
++dataHora: datetime
++status: string
 }
 
 class Servico {
-+valor: float
-+nome: string
++tipo: string
 +duracao: int
++valor: float
 }
 
-class Barbeiro {
-+ nome: string
-}
-
-
-Cliente "1"--> "N"  Agendamento
-Barbeiro "1"-->"N" Agendamento
-Agendamento "1" --> "1" Servico
+Tutor "1"--> "N"  Pet
+Tutor "1"-->"N" Agendamento
+Passeador "1" --> "N" Agendamento
+Pet "1" --> "N" Agendamento
+Servico "1" --> Agendamento
 
 
