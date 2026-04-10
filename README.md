@@ -25,9 +25,9 @@ Projeto desenvolvido para gerenciar agendamentos de clientes para passear com se
 \## UML
 
 
+## Diagrama UML
 
 ```mermaid
-
 classDiagram
 
 class Tutor {
@@ -35,7 +35,7 @@ class Tutor {
 +telefone: int
 }
 
-class pet {
+class Pet {
 +nome: string
 +idade: int
 +porte: string
@@ -57,10 +57,8 @@ class Servico {
 +valor: float
 }
 
-Tutor "1"--> "N"  Pet
-Tutor "1"-->"N" Agendamento
+Tutor "1" --> "N" Pet
+Tutor "1" --> "N" Agendamento
 Passeador "1" --> "N" Agendamento
 Pet "1" --> "N" Agendamento
-Servico "1" --> Agendamento
-
-
+Servico "1" --> "N" Agendamento
